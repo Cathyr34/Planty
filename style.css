@@ -1,0 +1,101 @@
+/*
+Theme Name: Planty
+Template: blankslate
+Theme URI: https://wordpress.org/themes/twentytwenty/
+Author: Planty
+Author URI: https://wordpress.org/
+Description: Planty theme
+Version: 1.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: planty-theme
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+.en_tete {
+   height: 80px;
+   margin-top : 0px;
+   background-color: #FFFFFF;  
+   display: flex;
+   align-items: center; 
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.en_tete ul {
+   list-style-type: none; 
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+}
+
+.en_tete ul li {
+   flex-direction: row;
+   margin: 0 0 0 80px;
+}
+
+ a {
+   text-decoration: none; 
+   
+ } 
+
+.logo {
+   width: 200px;
+   margin-left: 40px;
+}
+
+.menu {
+   height: 80px;
+   margin-top: 0px;
+}
+
+.commander {
+   width: 240px;
+   height: 80px;
+   background-color: #DC9F96;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.commander a {
+   color:#FFFFFF;
+}
+
+
+.page-title { 
+   display: none; }
+   
+
+/* FOOTER */
+
+ .footer {
+   height: 60px;
+   margin-bottom : 0px;
+   background-color: #FFFFFF;  
+}
+
+ .footer ul {
+   height: 60px;
+   list-style-type: none;
+   display: flex;
+   align-items: center; 
+   justify-content: center; 
+ }
+
+ .footer ul li {
+   margin: 0 20px 0 20px;
+ }
+
+ li.menu-item a {
+   color: black;
+ }
+
+ .page-title { 
+   display: none; }
+
+   
