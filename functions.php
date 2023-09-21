@@ -32,8 +32,8 @@ function planty_menu_link_class($attrs)
     $attrs['class'] = 'nav-link';
     return $attrs;
 }
-add_filter('nav_menu_css_class', 'theme_menu_class');
-add_filter('nav_menu_link_attributes', 'theme_menu_link_class');
+add_filter('nav_menu_css_class', 'planty_menu_class');
+add_filter('nav_menu_link_attributes', 'planty_menu_link_class');
 
 
 add_action('admin_menu', 'ajouter_page_admin');
