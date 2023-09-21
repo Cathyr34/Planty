@@ -8,7 +8,7 @@
 
 <header class="en_tete">
 
-<a href="http://planty.local/home/"><img class="logo" src="<?= get_stylesheet_directory_uri() ?>/image/Logo_source.png"></a>
+<a href="http://localhost:8080/planty/"><img class="logo" src="<?= get_stylesheet_directory_uri() ?>/image/Logo_source.png"></a>
 
 <?php
 wp_nav_menu([
