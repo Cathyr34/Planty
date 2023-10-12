@@ -1,6 +1,6 @@
 
 </main>
-<?php get_sidebar(); ?>
+
 </div>
 <footer id="footer" role="contentinfo" class="footer">
 
@@ -8,7 +8,7 @@
 	 wp_nav_menu([
 		'theme_location' => 'footer',
 		'container' => false,
-		'menu_class' => 'navbar-nav mr-auto',"nav_menu"
+		'menu_class' => 'navbar-nav mr-auto',"nav_menu",
 	 ])	;
 	 ?>
 
