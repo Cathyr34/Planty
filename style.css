@@ -56,6 +56,14 @@ a {
    margin-top: 0px;
 }
 
+ul#menu-planty-haut {
+   display: flex;
+}
+
+li#menu-item-20 {
+   order:1;
+}
+
 .commander {
    width: 240px;
    height: 80px;
@@ -71,6 +79,7 @@ a {
 
 li.menu-item.commander a {
    color: #FFFFFF;
+   order:1;
 }
 
 /* Footer */
@@ -353,16 +362,6 @@ hr {
    align-items: center;    
 }
 
-.maison {
-   height: 60px;
-   font-family: Syne;
-   font-size: 18px;
-   background-color: #3B8E46;
-   display: flex;
-   justify-content: center;
-   align-items: center;    
-}
-
 .fraise, .pamplemousse, .framboise, .citron {
    width: 100%;
    margin-bottom: 20px;
@@ -420,7 +419,6 @@ hr {
 .fruits {
    width: 100%;
 }
-
 
 .milieu {
    display: none;

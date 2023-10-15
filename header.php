@@ -19,6 +19,7 @@ wp_nav_menu([
 'container' => false,
 'menu_class' => 'navbar-nav mr-auto'
 ])?>
+
 </header>
 <div id="container">
 <main id="content" role="main">

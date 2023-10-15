@@ -29,34 +29,16 @@ function theme_menu_link_class($attrs)
 add_filter('nav_menu_css_class', 'theme_menu_class');
 add_filter('nav_menu_link_attributes', 'theme_menu_link_class');
 
-
-add_action('admin_menu', 'ajouter_page_admin');
-
-function ajouter_page_admin() {
-    add_menu_page(
-        'Admin', // Le titre de la page
-        'Planty haut', // Le nom du menu
-        'manage_options', // La capacité requise pour voir cette page (par exemple, 'manage_options' pour les administrateurs)
-        'admin', // Un slug unique pour cette page
-        'afficher_contenu_page' // La fonction qui affiche le contenu de la page
-    );
-}
-
-function afficher_contenu_page() {
-    if ( is_user_logged_in() ) {
-        echo 'Contenu de la page';
-    } else {
-        echo 'Veuillez vous connecter pour voir le contenu de cette page.';
+function custom_menu_items($items, $args) {
+    if (is_user_logged_in() && $args->theme_location == 'header') {
+        // Ajoutez le lien "Admin" dans le menu
+        $admin_link = '<li class="menu-item"><a href="' . admin_url() . '">Admin</a></li>';
+        $items = $items . $admin_link;
     }
+    return $items;
 }
 
-add_filter('nav_menu_meta_box_object', 'show_private_pages_menu_selection');
+add_filter('wp_nav_menu_items', 'custom_menu_items', 10, 2);
 
-function show_private_pages_menu_selection($args) {
-  if ($args->name == 'admin') {
-    $args->_default_query['post_status'] = array('publish','private');
-  }
-  return $args;
-}
 
 
