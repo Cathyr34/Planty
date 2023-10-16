@@ -11,7 +11,7 @@
 
 <header class="en_tete">
 
-<a href="http://localhost:8080/planty/"><img class="logo" src="<?= get_stylesheet_directory_uri() ?>/image/Logo_source.png"></a>
+<a href="http://localhost:8080/planty/"><img class="logo" src="<?= get_stylesheet_directory_uri() ?>/image/Logo_source.png" alt="logo"></a>
 
 <?php
 wp_nav_menu([
