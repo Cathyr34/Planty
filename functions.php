@@ -31,7 +31,7 @@ add_filter('nav_menu_link_attributes', 'theme_menu_link_class');
 
 function custom_menu_items($items, $args) {
     if (is_user_logged_in() && $args->theme_location == 'header') {
-        // Ajoutez le lien "Admin" dans le menu
+        
         $admin_link = '<li class="menu-item"><a href="' . admin_url() . '">Admin</a></li>';
         $items = $items . $admin_link;
     }
